@@ -1,2 +1,3 @@
-# 5th-grade-success-guide
-Exported from Caffeine project: 5th Grade Success Guide
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`
