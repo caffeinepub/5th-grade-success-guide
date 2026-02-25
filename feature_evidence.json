@@ -1,0 +1,42 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-a-grade-checker-section-to-the-app-where-students-can-input-their-last-grade-as-a-letter-grade-or-percentage-the-subject-e-g-math-reading-science-and-the-specific-topic-they-struggled-with-on-submission-display-a-personalized-set-of-tips-and-improvement-strategies-tailored-to-the-entered-subject-and-grade-level",
+      "featureTitle": "Add a Grade Checker section to the app where students can input their last grade (as a letter grade or percentage), the subject (e.g., Math, Reading, Science), and the specific topic they struggled with. On submission, display a personalized set of tips and improvement strategies tailored to the entered subject and grade level.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/GradeChecker.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-grade-checker-as-a-ninth-entry-in-the-existing-tableofcontents-navigation-bar-so-students-can-click-it-to-jump-directly-to-the-grade-checker-section",
+      "featureTitle": "Add 'Grade Checker' as a ninth entry in the existing TableOfContents navigation bar so students can click it to jump directly to the Grade Checker section.",
+      "files": [
+        "frontend/src/components/TableOfContents.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

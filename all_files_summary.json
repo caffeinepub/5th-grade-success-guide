@@ -1,0 +1,19 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as a placeholder backend with no implemented functionality.",
+  "feature_evidence.json": "Feature evidence report mapping two implemented features (GradeChecker section and TableOfContents nav entry) to their source files, components, and test IDs.",
+  "frontend-file-summaries.txt": "JSON document containing one-sentence summaries of each frontend source file for build planning reference.",
+  "frontend/index.css": "Global CSS file importing Tailwind directives and defining OKLCH-based CSS custom properties for light and dark theme color tokens.",
+  "frontend/index.html": "HTML entry point for the 5th Grade Success Guide app, mounting the React app into a root div and loading the main TSX module.",
+  "frontend/src/App.tsx": "Root React component that composes GuideHeader, TableOfContents, GuideContent, GradeChecker, and a branded footer with dynamic year and caffeine.ai attribution.",
+  "frontend/src/components/GradeChecker.tsx": "Interactive Grade Checker component with a form for grade, subject, and topic inputs that displays personalized improvement tips and an encouraging message based on parsed grade level and subject.",
+  "frontend/src/components/GuideContent.tsx": "Renders all 8 guide sections using GuideSection components with predefined content covering organization, study habits, reading, math, and other school skills.",
+  "frontend/src/components/GuideHeader.tsx": "Hero header component displaying the guide title and subtitle over a banner image with a gradient overlay and animated emoji accents.",
+  "frontend/src/components/GuideSection.tsx": "Reusable card component for a guide section, rendering a numbered badge, emoji heading, optional intro text, and a star-marked bullet list.",
+  "frontend/src/components/TableOfContents.tsx": "A sticky navigation bar component listing 9 guide sections with emoji labels, supporting smooth-scroll jump links, active section highlighting via IntersectionObserver, and a collapsible mobile dropdown.",
+  "frontend/src/hooks/useActor.ts": "A React hook that creates and caches an ICP backend actor (authenticated or anonymous) using React Query, and invalidates dependent queries whenever the actor instance changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides an InternetIdentityProvider and useInternetIdentity hook for managing ICP Internet Identity authentication state, including login, logout, and identity persistence via AuthClient.",
+  "frontend/src/index.css": "Global stylesheet that imports Google Fonts (Nunito, Fredoka One), sets up Tailwind layers, and defines OKLCH-based CSS custom properties for a warm, cheerful light/dark color theme.",
+  "frontend/src/main.tsx": "Application entry point that mounts the React app wrapped with QueryClientProvider and InternetIdentityProvider into the DOM root.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the default theme with custom OKLCH color tokens, Fredoka One/Nunito font families, rounded border radii, section colors, and plugins for typography, container queries, and animations.",
+  "project_state.json": "Project state metadata file tracking the current version, feature list, and requirements for a 5th-grade student guide app covering study tips, grade checking, and related educational content."
+}

@@ -1,0 +1,53 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-25T12:42:50.430Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-5",
+        "summary": "Add a Grade Checker section to the app where students can input their last grade (as a letter grade or percentage), the subject (e.g., Math, Reading, Science), and the specific topic they struggled with. On submission, display a personalized set of tips and improvement strategies tailored to the entered subject and grade level.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/GradeChecker.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/GradeChecker.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Add 'Grade Checker' as a ninth entry in the existing TableOfContents navigation bar so students can click it to jump directly to the Grade Checker section.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/TableOfContents.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/TableOfContents.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/App.tsx",
+    "frontend/src/components/GradeChecker.tsx",
+    "frontend/src/components/TableOfContents.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

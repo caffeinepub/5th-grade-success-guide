@@ -1,0 +1,67 @@
+{
+  "kind": "build_request",
+  "title": "Add Grade Checker Tool",
+  "projectName": "5th Grade Success",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "text": "Add a Grade Checker section to the app where students can input their last grade (as a letter grade or percentage), the subject (e.g., Math, Reading, Science), and the specific topic they struggled with. On submission, display a personalized set of tips and improvement strategies tailored to the entered subject and grade level.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Make a grade checker like the person in the app puts his last grade in about the subject what topic and how you are going to help him."
+        ]
+      },
+      "acceptanceCriteria": [
+        "A Grade Checker form is visible on the page with three input fields: Last Grade (letter or percentage), Subject (e.g., Math, Reading, Science, Social Studies), and Topic (free-text describing what they found difficult).",
+        "The form has a clearly labeled submit/check button.",
+        "After submission, a results card appears below the form displaying the entered grade, subject, and topic back to the student.",
+        "The results card includes at least 4–5 personalized improvement tips relevant to the entered subject (e.g., math tips for Math, reading tips for Reading, etc.).",
+        "If the grade is low (e.g., D or below 70%), the tips section is prefaced with an encouraging message like 'Don't give up — here's how you can improve!' ",
+        "If the grade is passing (e.g., C or 70–84%), tips focus on going from good to great.",
+        "If the grade is high (e.g., A/B or 85%+), tips celebrate the student and suggest ways to stay on top.",
+        "The Grade Checker section matches the bright, warm, and playful visual theme of the rest of the app (rounded cards, cheerful colors, emoji accents).",
+        "The Grade Checker section is accessible via the existing Table of Contents navigation bar."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Add 'Grade Checker' as a ninth entry in the existing TableOfContents navigation bar so students can click it to jump directly to the Grade Checker section.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Make a grade checker like the person in the app puts his last grade in about the subject what topic and how you are going to help him."
+        ]
+      },
+      "acceptanceCriteria": [
+        "The TableOfContents component includes a 'Grade Checker 📝' link after the 8 existing section links.",
+        "Clicking the link smoothly scrolls the user to the Grade Checker section.",
+        "The active-section highlight logic works for the Grade Checker section the same way it does for the 8 guide sections."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/hooks/ (immutable paths).",
+    "Do not modify frontend/src/main.tsx (immutable path).",
+    "Do not modify files under frontend/src/components/ui (immutable path).",
+    "The grade checker logic (tip generation based on subject and grade) should be implemented entirely on the frontend — no backend changes required.",
+    "Visual theme must remain consistent with the existing warm, cheerful, 5th-grade-friendly design."
+  ],
+  "nonGoals": [
+    "Persisting grade checker inputs or results to the backend.",
+    "User accounts or grade history tracking.",
+    "Integration with any external grading or school management systems.",
+    "Changing any of the 8 existing guide sections or their content."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

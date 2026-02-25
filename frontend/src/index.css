@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Fredoka+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 1rem;
+
+        /* Warm, cheerful palette for 5th graders */
+        --background: 0.98 0.015 85;
+        --foreground: 0.22 0.04 50;
+
+        --card: 1 0 0;
+        --card-foreground: 0.22 0.04 50;
+
+        --popover: 1 0 0;
+        --popover-foreground: 0.22 0.04 50;
+
+        /* Sunny orange-yellow primary */
+        --primary: 0.72 0.18 55;
+        --primary-foreground: 1 0 0;
+
+        /* Soft peach secondary */
+        --secondary: 0.95 0.04 75;
+        --secondary-foreground: 0.3 0.06 50;
+
+        --muted: 0.94 0.02 80;
+        --muted-foreground: 0.5 0.04 60;
+
+        --accent: 0.88 0.12 145;
+        --accent-foreground: 0.2 0.06 145;
+
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+
+        --border: 0.88 0.04 75;
+        --input: 0.88 0.04 75;
+        --ring: 0.72 0.18 55;
+
+        /* Section colors */
+        --section-1: 0.94 0.12 85;
+        --section-2: 0.93 0.1 145;
+        --section-3: 0.92 0.1 200;
+        --section-4: 0.94 0.1 30;
+        --section-5: 0.93 0.1 280;
+        --section-6: 0.94 0.1 170;
+        --section-7: 0.93 0.1 55;
+        --section-8: 0.93 0.1 320;
+
+        --chart-1: 0.72 0.18 55;
+        --chart-2: 0.65 0.15 145;
+        --chart-3: 0.6 0.15 200;
+        --chart-4: 0.7 0.18 30;
+        --chart-5: 0.65 0.15 280;
+
+        --sidebar: 0.97 0.02 80;
+        --sidebar-foreground: 0.22 0.04 50;
+        --sidebar-primary: 0.72 0.18 55;
+        --sidebar-primary-foreground: 1 0 0;
+        --sidebar-accent: 0.94 0.04 75;
+        --sidebar-accent-foreground: 0.22 0.04 50;
+        --sidebar-border: 0.88 0.04 75;
+        --sidebar-ring: 0.72 0.18 55;
+    }
+
+    .dark {
+        --background: 0.18 0.03 50;
+        --foreground: 0.95 0.02 80;
+
+        --card: 0.22 0.03 50;
+        --card-foreground: 0.95 0.02 80;
+
+        --popover: 0.25 0.03 50;
+        --popover-foreground: 0.95 0.02 80;
+
+        --primary: 0.78 0.18 55;
+        --primary-foreground: 0.15 0.03 50;
+
+        --secondary: 0.28 0.04 55;
+        --secondary-foreground: 0.95 0.02 80;
+
+        --muted: 0.28 0.03 55;
+        --muted-foreground: 0.65 0.04 70;
+
+        --accent: 0.35 0.08 145;
+        --accent-foreground: 0.9 0.06 145;
+
+        --destructive: 0.704 0.191 22.216;
+        --destructive-foreground: 0.205 0 0;
+
+        --border: 1 0 0 / 12%;
+        --input: 1 0 0 / 15%;
+        --ring: 0.78 0.18 55;
+
+        --section-1: 0.28 0.08 85;
+        --section-2: 0.28 0.07 145;
+        --section-3: 0.28 0.07 200;
+        --section-4: 0.28 0.07 30;
+        --section-5: 0.28 0.07 280;
+        --section-6: 0.28 0.07 170;
+        --section-7: 0.28 0.07 55;
+        --section-8: 0.28 0.07 320;
+
+        --sidebar: 0.22 0.03 50;
+        --sidebar-foreground: 0.95 0.02 80;
+        --sidebar-primary: 0.78 0.18 55;
+        --sidebar-primary-foreground: 0.15 0.03 50;
+        --sidebar-accent: 0.28 0.04 55;
+        --sidebar-accent-foreground: 0.95 0.02 80;
+        --sidebar-border: 1 0 0 / 12%;
+        --sidebar-ring: 0.78 0.18 55;
+    }
+
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    h1, h2, h3 {
+        font-family: 'Fredoka One', cursive;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add Grade Checker Tool",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "summary": "Add a Grade Checker section where students can input their last grade, subject, and topic, then receive personalized improvement tips tailored to the subject and grade level",
+      "acceptanceCriteria": [
+        "A Grade Checker form is visible on the page with three input fields: Last Grade (letter or percentage), Subject (e.g., Math, Reading, Science, Social Studies), and Topic (free-text describing what they found difficult).",
+        "The form has a clearly labeled submit/check button.",
+        "After submission, a results card appears below the form displaying the entered grade, subject, and topic back to the student.",
+        "The results card includes at least 4–5 personalized improvement tips relevant to the entered subject (e.g., math tips for Math, reading tips for Reading, etc.).",
+        "If the grade is low (e.g., D or below 70%), the tips section is prefaced with an encouraging message like 'Don't give up — here's how you can improve!' ",
+        "If the grade is passing (e.g., C or 70–84%), tips focus on going from good to great.",
+        "If the grade is high (e.g., A/B or 85%+), tips celebrate the student and suggest ways to stay on top.",
+        "The Grade Checker section matches the bright, warm, and playful visual theme of the rest of the app (rounded cards, cheerful colors, emoji accents).",
+        "The Grade Checker section is accessible via the existing Table of Contents navigation bar."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/GradeChecker.tsx",
+          "operation": "create",
+          "description": "Create a new GradeChecker component that renders a form with three fields (Last Grade, Subject dropdown, and Topic textarea), handles submission, and displays personalized improvement tips. The component should include frontend logic to generate 4–5 tips based on the subject (Math, Reading, Science, Social Studies, etc.) and adjust the encouragement message based on grade level (low/passing/high). Use the same rounded card styling, warm colors, and emoji accents as the existing GuideSection components to maintain visual consistency."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the new GradeChecker component after the GuideContent component and before the footer, ensuring it appears as a ninth section on the page. Wrap the GradeChecker component in a section element with an id='grade-checker' attribute to enable smooth scrolling from the Table of Contents navigation."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Add 'Grade Checker' as a ninth entry in the existing TableOfContents navigation bar so students can click it to jump directly to the Grade Checker section",
+      "acceptanceCriteria": [
+        "The TableOfContents component includes a 'Grade Checker 📝' link after the 8 existing section links.",
+        "Clicking the link smoothly scrolls the user to the Grade Checker section.",
+        "The active-section highlight logic works for the Grade Checker section the same way it does for the 8 guide sections."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/TableOfContents.tsx",
+          "operation": "modify",
+          "description": "Add a ninth navigation link labeled 'Grade Checker 📝' to the existing sections array, linking to '#grade-checker'. Ensure the IntersectionObserver logic includes 'grade-checker' in the observed sections so the active-section highlighting works correctly when the user scrolls to or clicks on the Grade Checker section."
+        }
+      ]
+    }
+  ]
+}

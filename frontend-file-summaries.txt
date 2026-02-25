@@ -1,0 +1,10 @@
+{
+  "frontend/src/index.css": "Global styles with a warm, cheerful OKLCH color palette (yellows, oranges, greens), Nunito body font, Fredoka One display font, and per-section color tokens for the 5th grade guide theme.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with custom display/body font families, section color tokens (1–8), fun box shadows, and gentle animation keyframes for the guide's playful aesthetic.",
+  "frontend/src/App.tsx": "Root app component that composes GuideHeader, TableOfContents, GuideContent, the new GradeChecker section, and a branded footer with dynamic year and caffeine.ai attribution.",
+  "frontend/src/components/GuideHeader.tsx": "Hero header component displaying the guide title and subtitle over the generated banner image with a gradient overlay and animated emoji accents.",
+  "frontend/src/components/TableOfContents.tsx": "Sticky navigation bar with smooth-scroll anchor links to all 9 guide sections (including the new Grade Checker), active-section highlighting via IntersectionObserver, and a mobile-friendly collapsible dropdown.",
+  "frontend/src/components/GuideSection.tsx": "Reusable card component for each guide section with a numbered badge, emoji heading, intro text, and styled bullet list with star markers.",
+  "frontend/src/components/GuideContent.tsx": "Renders all 8 guide sections using GuideSection components with the exact user-provided content, plus an animated encouraging conclusion card.",
+  "frontend/src/components/GradeChecker.tsx": "New Grade Checker component with a form for entering last grade (letter or percentage), subject (dropdown), and topic (textarea), plus a results card showing personalized improvement tips and an encouraging message based on grade level (low/passing/high) and subject."
+}

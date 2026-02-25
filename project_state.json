@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "A student-friendly guide app titled '5th Grade Success: Tips and Tricks to Improve Your Grades' covering organization, study habits, reading, math, class participation, test-taking, healthy habits, and goal setting for 5th graders.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-display-the-full-5th-grade-success-tips-and-tricks-to-improve-your-grades-guide-with-all-8-sections-getting-organized-better-study-habits-improving-reading-skills-getting-better-at-math-listening-and-participating-in-class-test-taking-strategies-healthy-habits-for-school-success-and-setting-goals-and-staying-motivated-each-section-should-be-clearly-headed-and-include-its-bullet-point-content-end-with-the-encouraging-conclusion-paragraph",
+      "title": "Display the full '5th Grade Success: Tips and Tricks to Improve Your Grades' guide with all 8 sections: Getting Organized, Better Study Habits, Improving Reading Skills, Getting Better at Math, Listening and Participating in Class, Test-Taking Strategies, Healthy Habits for School Success, and Setting Goals and Staying Motivated. Each section should be clearly headed and include its bullet-point content. End with the encouraging conclusion paragraph.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-bright-fun-and-energetic-visual-theme-suited-for-5th-grade-students-use-warm-cheerful-colors-e-g-yellows-oranges-greens-rounded-friendly-typography-and-a-card-based-or-section-divided-layout-each-section-should-feel-distinct-and-visually-engaging-include-playful-decorative-touches-icons-emoji-or-subtle-illustrated-accents-to-keep-the-content-approachable-and-motivating-enforce-the-theme-consistently-across-the-entire-app",
+      "title": "Apply a bright, fun, and energetic visual theme suited for 5th-grade students. Use warm, cheerful colors (e.g., yellows, oranges, greens), rounded friendly typography, and a card-based or section-divided layout. Each section should feel distinct and visually engaging. Include playful decorative touches (icons, emoji, or subtle illustrated accents) to keep the content approachable and motivating. Enforce the theme consistently across the entire app.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-sticky-or-prominent-page-header-displaying-the-guide-title-5th-grade-success-tips-and-tricks-to-improve-your-grades-with-a-motivating-subtitle-such-as-your-guide-to-doing-your-best-in-school",
+      "title": "Add a sticky or prominent page header displaying the guide title '5th Grade Success: Tips and Tricks to Improve Your Grades' with a motivating subtitle such as 'Your guide to doing your best in school!'",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-table-of-contents-or-navigation-bar-that-lists-all-8-section-titles-allowing-users-to-click-and-jump-to-the-corresponding-section-on-the-page",
+      "title": "Add a table of contents or navigation bar that lists all 8 section titles, allowing users to click and jump to the corresponding section on the page.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-grade-checker-section-to-the-app-where-students-can-input-their-last-grade-as-a-letter-grade-or-percentage-the-subject-e-g-math-reading-science-and-the-specific-topic-they-struggled-with-on-submission-display-a-personalized-set-of-tips-and-improvement-strategies-tailored-to-the-entered-subject-and-grade-level",
+      "title": "Add a Grade Checker section to the app where students can input their last grade (as a letter grade or percentage), the subject (e.g., Math, Reading, Science), and the specific topic they struggled with. On submission, display a personalized set of tips and improvement strategies tailored to the entered subject and grade level.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-grade-checker-as-a-ninth-entry-in-the-existing-tableofcontents-navigation-bar-so-students-can-click-it-to-jump-directly-to-the-grade-checker-section",
+      "title": "Add 'Grade Checker' as a ninth entry in the existing TableOfContents navigation bar so students can click it to jump directly to the Grade Checker section.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Display full '5th Grade Success' guide with all 8 sections in a clean, age-appropriate layout",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add a grade checker tool where students input their last grade, subject/topic, and receive personalized tips on how to improve in that area",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "5th Grade Success Guide",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
